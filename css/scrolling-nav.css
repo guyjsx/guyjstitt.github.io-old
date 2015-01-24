@@ -1,0 +1,106 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-default {
+    background-color: #36D9C3;
+    border-bottom: none;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+        background-color: white;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    min-height: 660px;
+    padding-top: 100px;
+    background: #fff;
+}
+
+.about-section {
+    min-height: 700px;
+    padding-top: 80px;
+    background: #eee;
+   
+}
+
+.services-section {
+    min-height: 600px;
+    padding-top: 80px;
+    background: #1D2026;
+}
+
+.picture-section {
+    max-height: 700px;
+    background: green;
+   
+}
+
+.contact-section {
+    min-height: 100%;
+    padding-top: 80px;
+    background: #eee;
+}
+
+.fadeIn {
+    opacity: 1;
+}
+
+.slideRight {
+    position: relative;
+    -webkit-animation: slideRight 0.5s ease-in; 
+    -moz-animation: slideRight 0.5s ease-in; 
+    -o-animation: slideRight 0.5s ease-in;      
+    animation: slideRight 0.5s ease-in;  
+}
+
+@-webkit-keyframes slideRight {
+    from { left: 0px;}
+    to { left: 700px;}
+}
+
+@keyframes slideRight {
+    from { right: 700px;}
+    to { right: -15px;}
+}
+
+@media(max-width: 768px) {
+    .intro-section{
+        padding-top: 50px;
+    }
+    .about-section{
+        padding-top: 50px;
+    }
+    .services-section{
+        padding-top: 50px;
+    }
+    .contact-section{
+        padding-top: 50px;
+    }
+}

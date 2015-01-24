@@ -1,0 +1,430 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+/* line 1, ../sass/_intro.scss */
+#intro {
+  background-color: #36D9C3;
+}
+
+/* line 4, ../sass/_intro.scss */
+.jumbotron {
+  background-color: transparent;
+}
+
+/* line 8, ../sass/_intro.scss */
+.jumbotron h1, .jumbotron p {
+  font-family: 'Roboto Slab',serif;
+}
+
+/* line 12, ../sass/_intro.scss */
+#intro .container {
+  max-width: 100%;
+}
+
+/* line 16, ../sass/_intro.scss */
+#intro .jumbotron h1 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+/* line 2, ../sass/_about.scss */
+.wid {
+  margin-top: 80px;
+}
+
+/* line 5, ../sass/_about.scss */
+.thumbnail {
+  border: none;
+  background-color: transparent;
+}
+
+/* line 10, ../sass/_about.scss */
+.aboutHeader h2, .aboutHeader p {
+  text-align: center;
+}
+
+/* line 14, ../sass/_about.scss */
+.caption {
+  text-align: center;
+}
+
+/* line 17, ../sass/_about.scss */
+.aboutHeader h2 {
+  opacity: 0;
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.17, 0.89, 0.67, 1.57), opacity 0.6s ease-out;
+  transition: transform 0.6s cubic-bezier(0.17, 0.89, 0.67, 1.57), opacity 0.6s ease-out;
+}
+
+/* line 25, ../sass/_about.scss */
+.aboutHeader h2.in {
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+
+/* line 31, ../sass/_about.scss */
+.caption h3 {
+  font-family: 'Roboto Slab',serif;
+}
+
+/* line 34, ../sass/_about.scss */
+.caption p {
+  font-family: sans-serif;
+}
+
+/* line 38, ../sass/_about.scss */
+.scrollimation.fadeUp {
+  opacity: 0;
+  transform: translateY(100px);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.17, 0.89, 0.67, 1.57), opacity 0.6s ease-out;
+  transition: transform 0.6s cubic-bezier(0.17, 0.89, 0.67, 1.57), opacity 0.6s ease-out;
+}
+
+/* line 45, ../sass/_about.scss */
+.scrollimation.fadeUp.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* line 50, ../sass/_about.scss */
+.scrollimation.i1 {
+  transition-delay: 0.1s;
+}
+
+/* line 54, ../sass/_about.scss */
+.scrollimation.i2 {
+  transition-delay: 0.3s;
+}
+
+/* line 58, ../sass/_about.scss */
+.scrollimation.i3 {
+  transition-delay: 0.5s;
+}
+
+/* line 62, ../sass/_about.scss */
+.scrollimation.i4 {
+  transition-delay: 0.7s;
+}
+
+/* CSS for Aboutme.tpl*/
+/* line 68, ../sass/_about.scss */
+.profilePic {
+  position: relative;
+  border-radius: 105%;
+  border: 1px solid black;
+  overflow: hidden;
+  padding: 125px;
+  width: auto;
+  max-width: 250px;
+  /* max-height: 400px; */
+  background: url("../img/profile2.jpg");
+  background-position: 0px -17px, center;
+  margin: 0 auto;
+  /* transform: scale(0.5); */
+  background-size: cover;
+}
+
+/* line 84, ../sass/_about.scss */
+.profilePic.scrollimation {
+  opacity: 0;
+  transform: translateX(-1000px);
+  transition: transform 0.6s cubic-bezier(0.17, 0.89, 0.67, 1.57), opacity 0.6s ease-out;
+}
+
+/* line 90, ../sass/_about.scss */
+.profilePic.scrollimation.in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* line 95, ../sass/_about.scss */
+.aboutMe h2 {
+  color: white;
+  text-align: center;
+}
+
+/* line 100, ../sass/_about.scss */
+.aboutP p {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+}
+
+/* line 4, ../sass/_resume.scss */
+.skillbar {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  background: #eee;
+  height: 35px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -ms-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -ms-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+}
+
+/* line 26, ../sass/_resume.scss */
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #ffffff;
+  background: #6adcfa;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* line 43, ../sass/_resume.scss */
+.skillbar-title span {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  height: 35px;
+  line-height: 35px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* line 57, ../sass/_resume.scss */
+.skillbar-bar {
+  height: 35px;
+  width: 0px;
+  background: #6adcfa;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+/* line 66, ../sass/_resume.scss */
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 77, ../sass/_resume.scss */
+h2.skills {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+/* line 82, ../sass/_resume.scss */
+section h3 {
+  font-weight: bold;
+}
+
+/* line 3, ../sass/_slider.scss */
+html {
+  border-top: 5px solid #fff;
+  background: #58DDAF;
+  color: #2a2a2a;
+}
+
+/* line 9, ../sass/_slider.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+/* line 15, ../sass/_slider.scss */
+h1 {
+  color: #fff;
+  text-align: left;
+  font-weight: 300;
+}
+
+/* line 21, ../sass/_slider.scss */
+#slider {
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+/* line 28, ../sass/_slider.scss */
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+/* line 36, ../sass/_slider.scss */
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 300px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+/* line 49, ../sass/_slider.scss */
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* line 66, ../sass/_slider.scss */
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+/* line 71, ../sass/_slider.scss */
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+/* line 75, ../sass/_slider.scss */
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+/* line 80, ../sass/_slider.scss */
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+/* line 87, ../sass/_slider.scss */
+.macbookScreen {
+  position: absolute;
+  top: 13%;
+  left: 15.2%;
+  width: 73.5%;
+  height: 92%;
+}
+
+/* line 95, ../sass/_slider.scss */
+.macbookFrame {
+  position: absolute;
+  margin: 0 auto;
+  max-width: 610px;
+  top: 0;
+  width: 100%;
+}
+
+/*
+.slider img {
+	max-width: 610px;
+}
+
+.item	{
+	max-width: 450px;
+}
+*/
+/* line 112, ../sass/_slider.scss */
+#intro .jumbotron h1 {
+  -webkit-transform: translateX(-1000px);
+  transform: translateX(-1000px);
+  opacity: 0;
+  transition: opacity .5s ease-out .3s,transform .5s ease-out .3s;
+  -webkit-transition: opacity .5s ease-out .3s,transform .5s ease-out .3s;
+}
+
+/* line 120, ../sass/_slider.scss */
+#intro .jumbotron p {
+  opacity: 0;
+  -webkit-transform: translateY(1000px);
+  transform: translateY(1000px);
+  -webkit-transition: opacity .5s ease-out .8s,-webkit-transform .5s ease-out .8s;
+  transition: opacity .5s ease-out .8s,transform .5s ease-out .8s;
+}
+
+/* line 128, ../sass/_slider.scss */
+#intro .jumbotron .slider {
+  -webkit-transform: translateX(1000px);
+  transform: translateX(1000px);
+  -webkit-transition: opacity .5s ease-out .6s,-webkit-transform .5s ease-out .6s;
+  transition: opacity .5s ease-out .6s,transform .5s ease-out .6s;
+}
+
+/* line 135, ../sass/_slider.scss */
+#intro .jumbotron h1.in {
+  opacity: 1;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+}
+
+/* line 141, ../sass/_slider.scss */
+#intro .jumbotron p.in {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+
+/* line 147, ../sass/_slider.scss */
+#intro .jumbotron .slider.in {
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+}
+
+/* line 1, ../sass/_scrollBackground.scss */
+.picture {
+  position: relative;
+  border: 1px solid black;
+  overflow: hidden;
+  height: 500px;
+  width: 100%;
+  max-height: 700px;
+  background: url("../img/uofl.jpg");
+  background-position: 0px -800px, center;
+  margin: 0 auto;
+  /* transform: scale(0.5); */
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  /* line 16, ../sass/_scrollBackground.scss */
+  #picture .picture {
+    background-position: center !important;
+  }
+}

@@ -109,6 +109,10 @@ of those sections to manage the look and feel of the site. */
 }
 
 @media(max-width: 768px) {
+
+    .logo-center {
+        display: none;
+    }
     .intro-section{
         padding-top: 50px;
     }

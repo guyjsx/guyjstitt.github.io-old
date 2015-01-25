@@ -29,11 +29,21 @@ $( document ).ready(function() {
         }
 
 
-        var picture = $('.picture');
+        var picture = $('.pictureTwo');
 
         var windowScroll = $(window).scrollTop();
         var sub = 2100;
-        var backgroundScroll =(windowScroll - sub) / 2.5;
+        var backgroundScroll = ((windowScroll - sub) / 8) - 100;
+        if( picture.hasClass("in")) {
+       
+            picture.css("background-position","0px " + backgroundScroll + "px , center");
+        }
+
+        var picture = $('.pictureOne');
+
+        var windowScroll = $(window).scrollTop();
+        var sub = 2100;
+        var backgroundScroll = ((windowScroll - sub) / 8) + 100;
         if( picture.hasClass("in")) {
        
             picture.css("background-position","0px " + backgroundScroll + "px , center");

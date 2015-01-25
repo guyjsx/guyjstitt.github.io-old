@@ -110,25 +110,24 @@
 /* line 68, ../sass/_about.scss */
 .profilePic {
   position: relative;
-  border-radius: 105%;
   border: 1px solid black;
   overflow: hidden;
   padding: 125px;
   width: auto;
   max-width: 250px;
   /* max-height: 400px; */
-  background: url("../img/profile2.jpg");
-  background-position: 0px -17px, center;
+  background: url("../img/new-profile.jpg");
+  background-position: 0px 0px, center;
   margin: 0 auto;
   /* transform: scale(0.5); */
-  background-size: cover;
+  background-size: 100%;
 }
 
 /* line 84, ../sass/_about.scss */
 .profilePic.scrollimation {
   opacity: 0;
   transform: translateX(-1000px);
-  transition: transform 0.6s cubic-bezier(0.17, 0.89, 0.67, 1.57), opacity 0.6s ease-out;
+  transition: transform 0.6s, opacity 0.6s ease-out;
 }
 
 /* line 90, ../sass/_about.scss */
@@ -175,10 +174,10 @@
 
 /* line 26, ../sass/_resume.scss */
 .skillbar-title {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
-  width: 110px;
+  width: 100%;
   font-weight: bold;
   font-size: 13px;
   color: #ffffff;
@@ -195,7 +194,7 @@
 .skillbar-title span {
   display: block;
   background: rgba(0, 0, 0, 0.1);
-  padding: 0 20px;
+  text-align: center;
   height: 35px;
   line-height: 35px;
   -webkit-border-top-left-radius: 3px;
@@ -211,9 +210,12 @@
   height: 35px;
   width: 0px;
   background: #6adcfa;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -moz-border-top-right-radius: 3px;
+  -moz-border-bottom-right-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
 }
 
 /* line 66, ../sass/_resume.scss */
@@ -415,7 +417,7 @@ a.control_next {
   height: 500px;
   width: 100%;
   max-height: 700px;
-  background: url("../img/uofl.jpg");
+  background: url("../img/depth.jpg");
   background-position: 0px -800px, center;
   margin: 0 auto;
   /* transform: scale(0.5); */
@@ -428,3 +430,74 @@ a.control_next {
     background-position: center !important;
   }
 }
+
+/* Resume CSS */
+#resume .container {
+  padding-bottom: 40px;
+}
+
+#resume .progress {
+  height: 35px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -moz-border-top-right-radius: 3px;
+  -moz-border-bottom-right-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-top-left-radius: 0;
+  -moz-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+}
+
+#resume .progress-bar {
+
+}
+
+.skill-title-wrapper {
+  padding-right: 0;
+}
+
+.skill-bar-wrapper {
+  padding-left: 0;
+}
+/* Contact CSS */
+
+#contact h2 {
+  text-align: center;
+  color: white;
+}
+
+#contact .input-group {
+  margin-top: 20px;
+}
+
+#contact .input-group span.messageHed {
+  height: 34px;
+  display: block;
+  border-radius: 4px 4px 0 0 !important;
+}
+
+
+#contact .input-group span.messageHed, #contact .input-group.message {
+  width: 100%;
+}
+
+#contact .input-group textarea.messageDek {
+  height: 300px;
+  border-radius: 0 0  4px 4px !important;
+  background-color: transparent;
+}
+
+#contact .btn {
+  width: 100%;
+
+  margin-top: 20px;
+}
+
+.form-control {
+  background-color: transparent;
+}
+

@@ -9,6 +9,7 @@
   <meta property="og:description" content="Welcome to my personal website" />
 
   <title>My Website</title>
+  <link rel="icon" type="image/png" href="img/favicon.ico">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/scrolling-nav.css">
@@ -25,6 +26,8 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   <div class="contentWrapper">
 
+
+
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
@@ -35,7 +38,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">My Website</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,8 +53,12 @@
                     <li>
                         <a class="page-scroll" href="#services" ajaxed="">About Me</a>
                     </li>
+                    <a  class="navbar-brand page-scroll logo-center" href="#page-top"><img class="logo-1" src="img/gs-logo-left.jpg"><img class="logo-2" src="img/gs-logo-right.jpg" style="display:none;"></a>
                     <li>
-                        <a class="page-scroll" href="#contact" ajaxed="">Resume</a>
+                        <a class="page-scroll" href="#resume" ajaxed="">Resume</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact" ajaxed="">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -155,7 +161,7 @@
                 <div class="aboutMe">
                   <h2 class="scrollimation">About Me</h2>
                 </div>  
-                <div class="profilePic scrollimation"></div>
+                <div class="profilePic img-circle scrollimation"></div>
                 <div class="aboutP">
                   <p>I'm 22 years old, a Senior at the University of Louisville majoring in Computer Information systems. I'm currently employed as a Front-End Web Developer at CBS Interactive, I work directly on CNET.com. I'm also employed as a Web Developer for Restorative Justice Louisville. In the past, I was a Supervisor for UPS at the Worldport Freight Facility.</p>
                 </div>
@@ -170,139 +176,270 @@
         <div class="picture"></div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
         <div class="container">
             <!-- Resume twig -->
             <div class="row">
                 <h2 class="skills scrollimation">My Skills</h2>
                 <div class="col-sm-6">
-                    <h2>Education</h2>
-                    <section>
+                    <section class="panel panel-success">
+                      <h2 class="panel-heading">Education</h2>
+                      <div class="panel-body">
                         <h3>University of Lousiville</h3>
                         <p>I'm currently a Senior, majoring in Computer Information Systems and concentrating in Web Development.</p>
                         <p>Gaduation Date: Summer 2015</p>
                         <p>Core GPA: 3.6</p>
+                      </div>
                     </section>
-                    <h2>Experience</h2>
-                    <section>
-                        <h3>CBS Interactive: CNET</h3>
-                        <p>After my internship I was hired on as a part-time Front-End Web Developer for CNET.com. I'm responsible of all aspects of the front-end. My responsibilities include web development using PHP, HTML, CSS and Javascript.</p>
-                    </section>
-                    <section>
-                        <h3>Restorative Justice Louisville</h3>
-                        <p>I'm responsible for data integrity, development, and front-end design of the website, and web application. The web application was developed using PHP and the CakePHP framework. The application allows RJL to efficiently manage court case information in a user friendly workflow. I'm in the process of deploying a new website using the CakePHP framework, along with Bootstrap and Sass. My role is to maintain the website and web application, and also further develop either one if needed.</p>
-                    </section>
-                    <section>
-                        <h3>UPS Worldport Freight Facility</h3>
-                        <p>I also have experience as a Supervisor at UPS, where I managed the entire Rollerbed Truck Operation. I was recognized for my employees having zero accidents or injuries, and for having zero missorts of packages.</p>
+                    <section class="panel panel-info">
+                        <h2 class="panel-heading">Experience</h2>
+                        <div class="panel-body">
+                          <h3>CBS Interactive: CNET</h3>
+                          <p>After my internship I was hired on as a part-time Front-End Web Developer for CNET.com. I'm responsible of all aspects of the front-end. My responsibilities include web development using PHP, HTML, CSS and Javascript.</p>
+                          <h3>Restorative Justice Louisville</h3>
+                          <p>I'm responsible for data integrity, development, and front-end design of the website, and web application. The web application was developed using PHP and the CakePHP framework. The application allows RJL to efficiently manage court case information in a user friendly workflow. I'm in the process of deploying a new website using the CakePHP framework, along with Bootstrap and Sass. My role is to maintain the website and web application, and also further develop either one if needed.</p>
+                          <h3>UPS Worldport Freight Facility</h3>
+                          <p>I also have experience as a Supervisor at UPS, where I managed the entire Rollerbed Truck Operation. I was recognized for my employees having zero accidents or injuries, and for having zero missorts of packages.</p>
+                        </div>
                     </section>
                 </div>
                 <div class="col-sm-6">
                     <h2>Languages</h2>
-                    <div class="skillbar clearfix " data-percent="90%">
-                        <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
-                        <div class="skillbar-bar" style="background: #e67e22;"></div>
-                        <div class="skill-bar-percent">90%</div>
-                    </div> <!-- End Skill Bar -->
-
-                    <div class="skillbar clearfix " data-percent="85%">
-                        <div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
-                        <div class="skillbar-bar" style="background: #3498db;"></div>
-                        <div class="skill-bar-percent">85%</div>
-                    </div> <!-- End Skill Bar -->
-
-                    <div class="skillbar clearfix " data-percent="75%">
-                        <div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
-                        <div class="skillbar-bar" style="background: #2c3e50;"></div>
-                        <div class="skill-bar-percent">75%</div>
-                    </div> <!-- End Skill Bar -->
-
-                    <div class="skillbar clearfix " data-percent="70%">
-                        <div class="skillbar-title" style="background: #2c3e50;"><span>Javascript</span></div>
-                        <div class="skillbar-bar" style="background: #2c3e50;"></div>
-                        <div class="skill-bar-percent">70%</div>
-                    </div> <!-- End Skill Bar -->
-
-                    <div class="skillbar clearfix " data-percent="65%">
-                        <div class="skillbar-title" style="background: #46465e;"><span>Java</span></div>
-                        <div class="skillbar-bar" style="background: #5a68a5;"></div>
-                        <div class="skill-bar-percent">65%</div>
-                    </div> <!-- End Skill Bar -->
-
-                    <div class="skillbar clearfix " data-percent="75%">
-                        <div class="skillbar-title" style="background: #333333;"><span>C#</span></div>
-                        <div class="skillbar-bar" style="background: #525252;"></div>
-                        <div class="skill-bar-percent">75%</div>
-                    </div> <!-- End Skill Bar -->
-
-                    <div class="skillbar clearfix " data-percent="80%">
-                        <div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
-                        <div class="skillbar-bar" style="background: #5a68a5;"></div>
-                        <div class="skill-bar-percent">80%</div>
-                    </div> <!-- End Skill Bar -->
-                    <h2>Extensions</h2>
-                    <div class="skillbar clearfix " data-percent="90%">
-                        <div class="skillbar-title" style="background: #333333;"><span>Twig</span></div>
-                        <div class="skillbar-bar" style="background: #4288d0;"></div>
-                        <div class="skill-bar-percent">90%</div>
-                    </div> <!-- End Skill Bar -->
-
-                    <div class="skillbar clearfix " data-percent="80%">
-                        <div class="skillbar-title" style="background: #333333;"><span>Sass</span></div>
-                        <div class="skillbar-bar" style="background: #2ecc71;"></div>
-                        <div class="skill-bar-percent">80%</div>
-                    </div> <!-- End Skill Bar -->
-
-                    <div class="skillbar clearfix " data-percent="85%">
-                        <div class="skillbar-title" style="background: #333333;"><span>RequireJS</span></div>
-                        <div class="skillbar-bar" style="background: #e67e22;"></div>
-                        <div class="skill-bar-percent">85%</div>
-                    </div> <!-- End Skill Bar -->
-                    <h2>Frameworks</h2>
-                    <div class="skillbar clearfix " data-percent="95%">
-                        <div class="skillbar-title" style="background: #333333;"><span>CakePHP</span></div>
-                        <div class="skillbar-bar" style="background: #525252;"></div>
-                        <div class="skill-bar-percent">95%</div>
-                    </div> <!-- End Skill Bar -->
-
-                    <div class="skillbar clearfix " data-percent="75%">
-                        <div class="skillbar-title" style="background: #333333;"><span>Symfony2</span></div>
-                        <div class="skillbar-bar" style="background: #2ecc71;"></div>
-                        <div class="skill-bar-percent">75%</div>
-                    </div> <!-- End Skill Bar -->
+                    <div class="row">
+                      <div class="skillbar clearfix">
+                        <div class="col-xs-3 skill-title-wrapper">
+                          <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+                        </div>
+                        <div class="col-xs-9 skill-bar-wrapper">
+                          <div class="progress" data-percent="95%">
+                            <div class="progress-bar progress-bar-success" role="progressbar"  style="background:  rgb(230, 126, 34);"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="skillbar clearfix">
+                        <div class="col-xs-3 skill-title-wrapper">
+                          <div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+                        </div>
+                        <div class="col-xs-9 skill-bar-wrapper">
+                          <div class="progress" data-percent="85%">
+                            <div class="progress-bar progress-bar-success" role="progressbar"  style="background: #3498db;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="skillbar clearfix">
+                        <div class="col-xs-3 skill-title-wrapper">
+                          <div class="skillbar-title" style="background: #2c3e50;"><span>Javascript</span></div>
+                        </div>
+                        <div class="col-xs-9 skill-bar-wrapper">
+                          <div class="progress" data-percent="80%">
+                            <div class="progress-bar progress-bar-success" role="progressbar"  style="background: #2c3e50;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="skillbar clearfix">
+                        <div class="col-xs-3 skill-title-wrapper">
+                          <div class="skillbar-title" style="background: #46465e;"><span>Java</span></div>
+                        </div>
+                        <div class="col-xs-9 skill-bar-wrapper">
+                          <div class="progress" data-percent="70%">
+                            <div class="progress-bar progress-bar-success" role="progressbar"  style="background:  #5a68a5;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="skillbar clearfix">
+                        <div class="col-xs-3 skill-title-wrapper">
+                          <div class="skillbar-title" style="background: #46465e;"><span>C#</span></div>
+                        </div>
+                        <div class="col-xs-9 skill-bar-wrapper">
+                          <div class="progress" data-percent="75%">
+                            <div class="progress-bar progress-bar-success" role="progressbar"  style="background:  #525252;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="skillbar clearfix">
+                        <div class="col-xs-3 skill-title-wrapper">
+                          <div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+                        </div>
+                        <div class="col-xs-9 skill-bar-wrapper">
+                          <div class="progress" data-percent="95%">
+                            <div class="progress-bar progress-bar-success" role="progressbar"  style="background: #5a68a5;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h2>Libraries and Frameworks</h2>
+                    <div class="row">
+                      <div class="skillbar clearfix">
+                        <div class="col-xs-3 skill-title-wrapper">
+                          <div class="skillbar-title" style="background: #333333;"><span>Twig</span></div>
+                        </div>
+                        <div class="col-xs-9 skill-bar-wrapper">
+                          <div class="progress" data-percent="95%">
+                            <div class="progress-bar progress-bar-success" role="progressbar"  style="background: #4288d0;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="skillbar clearfix">
+                        <div class="col-xs-3 skill-title-wrapper">
+                          <div class="skillbar-title" style="background: #333333;"><span>Sass</span></div>
+                        </div>
+                        <div class="col-xs-9 skill-bar-wrapper">
+                          <div class="progress" data-percent="90%">
+                            <div class="progress-bar progress-bar-success" role="progressbar"  style="background: #2ecc71;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="skillbar clearfix">
+                        <div class="col-xs-3 skill-title-wrapper">
+                          <div class="skillbar-title" style="background: #333333;"><span>AngularJS</span></div>
+                        </div>
+                        <div class="col-xs-9 skill-bar-wrapper">
+                          <div class="progress" data-percent="65%">
+                            <div class="progress-bar progress-bar-success" role="progressbar"  style="background: #5a68a5;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="skillbar clearfix">
+                        <div class="col-xs-3 skill-title-wrapper">
+                          <div class="skillbar-title" style="background: #333333;"><span>RequireJS</span></div>
+                        </div>
+                        <div class="col-xs-9 skill-bar-wrapper">
+                          <div class="progress" data-percent="85%">
+                            <div class="progress-bar progress-bar-success" role="progressbar"  style="background:rgb(230, 126, 34);"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="skillbar clearfix">
+                        <div class="col-xs-3 skill-title-wrapper">
+                          <div class="skillbar-title" style="background: #333333;"><span>CakePHP</span></div>
+                        </div>
+                        <div class="col-xs-9 skill-bar-wrapper">
+                          <div class="progress" data-percent="95%">
+                            <div class="progress-bar progress-bar-success" role="progressbar"  style="background: #525252;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="skillbar clearfix">
+                        <div class="col-xs-3 skill-title-wrapper">
+                          <div class="skillbar-title" style="background: #333333;"><span>Symfony2</span></div>
+                        </div>
+                        <div class="col-xs-9 skill-bar-wrapper">
+                          <div class="progress" data-percent="75%">
+                            <div class="progress-bar progress-bar-success" role="progressbar"  style="background: #2ecc71;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <h2>Other Important Skills</h2>
-                    <div class="skillbar clearfix " data-percent="95%">
-                        <div class="skillbar-title" style="background: #333333;"><span>Git</span></div>
-                        <div class="skillbar-bar" style="background: #525252;"></div>
-                        <div class="skill-bar-percent">95%</div>
-                    </div> <!-- End Skill Bar -->
-
-
-                    <div class="skillbar clearfix " data-percent="85%">
-                        <div class="skillbar-title" style="background: #124e8c;"><span>MySQL</span></div>
-                        <div class="skillbar-bar" style="background: #4288d0;"></div>
-                        <div class="skill-bar-percent">85%</div>
-                    </div> <!-- End Skill Bar -->
-
-                    <div class="skillbar clearfix " data-percent="70%">
-                        <div class="skillbar-title" style="background: #124e8c;"><span>Photoshop</span></div>
-                        <div class="skillbar-bar" style="background: #4288d0;"></div>
-                        <div class="skill-bar-percent">70%</div>
-                    </div> <!-- End Skill Bar -->
+                    <div class="row">
+                      <div class="skillbar clearfix">
+                        <div class="col-xs-3 skill-title-wrapper">
+                          <div class="skillbar-title" style="background: #333333;"><span>Git</span></div>
+                        </div>
+                        <div class="col-xs-9 skill-bar-wrapper">
+                          <div class="progress" data-percent="90%">
+                            <div class="progress-bar progress-bar-success" role="progressbar"  style="background:  #525252;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="skillbar clearfix">
+                        <div class="col-xs-3 skill-title-wrapper">
+                          <div class="skillbar-title" style="background: #124e8c;"><span>MySQL</span></div>
+                        </div>
+                        <div class="col-xs-9 skill-bar-wrapper">
+                          <div class="progress" data-percent="95%">
+                            <div class="progress-bar progress-bar-success" role="progressbar"  style="background: #4288d0;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="skillbar clearfix">
+                        <div class="col-xs-3 skill-title-wrapper">
+                          <div class="skillbar-title" style="background: #124e8c;"><span>Photoshop</span></div>
+                        </div>
+                        <div class="col-xs-9 skill-bar-wrapper">
+                          <div class="progress" data-percent="85%">
+                            <div class="progress-bar progress-bar-success" role="progressbar"  style="background: #4288d0;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <div class="container">
+          <form name-"Contact">
+            <div class="row">
+              <h2 class="contact scrollimation">Contact Me</h2>
+              <div class="col-md-3 col-md-offset-3">
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">Name</span>
+                  <input type="text" class="form-control" placeholder="Your name here" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">Email</span>
+                  <input type="text" class="form-control" placeholder="example@gmail.com" aria-describedby="basic-addon1">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <div class="input-group message">
+                  <span class="input-group-addon messageHed" id="basic-addon1">Message</span>
+                  <textarea class="form-control messageDek" placeholder="Leave me a message." aria-describedby="basic-addon1"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-md-offset-5">
+                <button type="submit" class="btn btn-default">Submit</button>
+              </div>
+            </div>
+          </form>
         </div>
     </section>
   </div> 
   <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/waypoints.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="js/jquery.simplr.smoothscroll.js"></script>
+  <script type="text/javascript" src="js/smooth-scroll.js"></script>
   <script type="text/javascript" src="js/modernizr.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/scrolling-nav.js"></script>
   <script type="text/javascript" src="js/share.js"></script>
   <script type="text/javascript" src="js/slider.js"></script>
-  <script type="text/javascript" src="js/waypoints.min.js"></script>
-  <script type="text/javascript" src="js/slider.js"></script>
+  <script type="text/javascript" src="js/skills.js"></script>
 </body>
 </html>

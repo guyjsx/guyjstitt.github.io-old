@@ -31,6 +31,10 @@ html {
         padding: 0;
         background-color: white;
     }
+
+    .logo-change {
+        display: none;
+    }
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
@@ -62,10 +66,16 @@ of those sections to manage the look and feel of the site. */
    
 }
 
-.contact-section {
+.resume-section {
     min-height: 100%;
     padding-top: 80px;
     background: #eee;
+}
+
+.contact-section {
+    min-height: 700px;
+    padding-top: 80px;
+    background-color: #1D2026;
 }
 
 .fadeIn {
@@ -100,7 +110,47 @@ of those sections to manage the look and feel of the site. */
     .services-section{
         padding-top: 50px;
     }
-    .contact-section{
+    .resume-section{
         padding-top: 50px;
     }
+}
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: none;
+        width: 451px;
+        margin: 0 auto;
+    }
+}
+
+
+/* Logo CSS */ 
+.logo-center {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.logo-center img {
+    width: 100px;
+    border-radius: 20px;
+}
+
+#cut-diamond {
+    border-style: solid;
+    border-color: transparent transparent red transparent;
+    border-width: 0 25px 25px 25px;
+    height: 0;
+    width: 50px;
+    position: relative;
+    margin: 20px 0 50px 0;
+}
+#cut-diamond:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+    border-width: 70px 50px 0 50px;
 }

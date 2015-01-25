@@ -20,12 +20,12 @@ $( document ).ready(function() {
     $(window).scroll(function() {
         if ($(".navbar").offset().top > 50) {
             $(".navbar-fixed-top").addClass("top-nav-collapse");
-            $(".navbar-fixed-top .logo-1").addClass("hide");
-            $(".navbar-fixed-top .logo-2").addClass("show");
+            $(".navbar-fixed-top .logo-1").addClass("logo-hide");
+            $(".navbar-fixed-top .logo-2").addClass("logo-show");
         } else {
             $(".navbar-fixed-top").removeClass("top-nav-collapse");
-            $(".navbar-fixed-top .logo-1").removeClass("hide");
-            $(".navbar-fixed-top .logo-2").removeClass("show");
+            $(".navbar-fixed-top .logo-1").removeClass("logo-hide");
+            $(".navbar-fixed-top .logo-2").removeClass("logo-show");
         }
 
 

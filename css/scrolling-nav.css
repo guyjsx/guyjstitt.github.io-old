@@ -35,6 +35,14 @@ html {
     .logo-change {
         display: none;
     }
+
+    .logo-show {
+        display: block !important;
+    }
+
+    .logo-hide {
+        display: none !important;
+    }
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.

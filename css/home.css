@@ -1,3 +1,47 @@
+
+#blogPromo {
+
+}
+
+.blogPromoWrapper  {
+    display: block;
+    position: fixed;
+    width: 300px;
+    height: 200px;
+    bottom: -200px;
+    left: 20%;
+    background-color: white;
+    z-index: 10;
+}
+
+.promoHeader {
+    height: 60px;
+    width: 100%;
+    background-color: #A9A9A9;
+    z-index: 11;
+}
+
+.promoHeader h1 {
+    font-size: 24px;
+    line-height: 60px;
+}
+
+.promoBody p {
+    padding: 10px
+}
+
+.promoLinks {
+    margin: 0 auto;
+    width: 185px;
+}
+
+.promoLinks span {
+    margin-left: 20px;
+}
+
+.closePromo {
+    cursor: pointer;
+}
 body {
 	
 }
